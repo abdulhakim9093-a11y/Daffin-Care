@@ -1,0 +1,225 @@
+/* ===== PAGE 7: DATA MASUK ===== */
+.data-masuk-header {
+    padding: 30px 40px;
+    text-align: center;
+    border-bottom: 1px solid #e8e4dc;
+}
+
+.data-masuk-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.data-masuk-header p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.data-masuk-main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.data-masuk-search-section {
+    padding: 20px 40px;
+    border-bottom: 1px solid #e8e4dc;
+}
+
+.data-masuk-search-box {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #1a1a2e;
+    background-color: transparent;
+    color: #1a1a2e;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.data-masuk-search-box::placeholder {
+    color: #999;
+}
+
+.data-masuk-search-box:focus {
+    outline: none;
+}
+
+.data-masuk-content-wrapper {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px 40px;
+}
+
+.data-masuk-table-wrapper {
+    width: 100%;
+}
+
+.data-masuk-table-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 120px;
+    gap: 40px;
+    padding: 15px 0;
+    border-bottom: 1px solid #1a1a2e;
+    margin-bottom: 10px;
+}
+
+.data-masuk-table-header .col-nama,
+.data-masuk-table-header .col-telp,
+.data-masuk-table-header .col-detail,
+.data-masuk-table-header .col-aksi {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1a1a2e;
+}
+
+.data-masuk-table-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 120px;
+    gap: 40px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e8e4dc;
+    align-items: center;
+}
+
+.data-masuk-table-row:last-child {
+    border-bottom: none;
+}
+
+.data-masuk-table-row .col-nama,
+.data-masuk-table-row .col-telp,
+.data-masuk-table-row .col-detail {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1a1a2e;
+    word-break: break-word;
+}
+
+.data-masuk-table-row .col-detail {
+    font-size: 14px;
+    color: #666;
+    max-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.data-masuk-table-row .col-aksi {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.btn-edit-data-masuk,
+.btn-hapus-data-masuk {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.btn-edit-data-masuk {
+    background-color: #2196F3;
+    color: white;
+}
+
+.btn-edit-data-masuk:hover {
+    background-color: #0b7dda;
+    transform: translateY(-2px);
+}
+
+.btn-hapus-data-masuk {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-hapus-data-masuk:hover {
+    background-color: #da190b;
+    transform: translateY(-2px);
+}
+
+.data-masuk-content-wrapper::-webkit-scrollbar {
+    width: 8px;
+}
+
+.data-masuk-content-wrapper::-webkit-scrollbar-track {
+    background: #fdfbf7;
+}
+
+.data-masuk-content-wrapper::-webkit-scrollbar-thumb {
+    background: #d0ccc4;
+    border-radius: 4px;
+}
+
+.data-masuk-content-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #a8a39b;
+}
+
+/* ===== PAGE 8: EDIT DATA MASUK ===== */
+.edit-data-masuk-header {
+    padding: 30px 40px;
+    text-align: center;
+    border-bottom: 1px solid #e8e4dc;
+}
+
+.edit-data-masuk-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.edit-data-masuk-header p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.back-edit-data-masuk-btn {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #1a1a2e;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: opacity 0.3s ease;
+    display: inline-block;
+}
+
+.back-edit-data-masuk-btn:hover {
+    opacity: 0.7;
+}
+
+/* ===== EDIT DATA MASUK FOTO PREVIEW STYLING ===== */
+#editDataMasukFotoPreview {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#editDataMasukFotoPreview img {
+    max-width: 100%;
+    max-height: 250px;
+    border-radius: 4px;
+    object-fit: contain;
+}
+
+.foto-filename {
+    font-size: 12px;
+    color: #666;
+    word-break: break-word;
+}
